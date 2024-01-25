@@ -1,4 +1,15 @@
 import express, { urlencoded } from "express";
-app = express();
 
-app.use(express.json())
+const PORT=3000;
+const app = express();
+
+app.use(express.json());
+
+
+
+
+app.listen((PORT,()=>{
+    console.log(`server is running on port: ${PORT}`);
+}))
+
+
