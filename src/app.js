@@ -1,3 +1,4 @@
+import 'dotenv'
 import express, { urlencoded } from "express";
 
 const PORT=3000;
