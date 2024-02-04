@@ -1,4 +1,5 @@
 import 'dotenv'
+import {generateCaptcha} from './fs.js'
 import express, { urlencoded } from "express";
 
 const PORT=process.env.PORT || 3000;
