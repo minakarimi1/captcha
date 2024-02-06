@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true}))
 
 
 app.get('/',(req,res)=>{
-
+    const { captcha, result } = generateCaptcha();
 })
 
 
