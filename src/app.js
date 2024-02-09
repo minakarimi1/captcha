@@ -16,7 +16,9 @@ app.get('/',(req,res)=>{
 
 })
 
+app.get('/captchaReq', (req, res) => {
 
+});
 
 app.listen((PORT,()=>{
     console.log(`server is running on port: ${PORT}`);
