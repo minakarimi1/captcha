@@ -17,6 +17,7 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/captchaReq', (req, res) => {
+    const { captcha, result } = generateCaptcha();
 
 });
 
