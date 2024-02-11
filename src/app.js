@@ -21,6 +21,11 @@ app.get('/captchaReq', (req, res) => {
     res.send({captcha:captcha,result:result})
 });
 
+app.post('/submit', (req, res) => {
+
+
+});
+
 app.listen((PORT,()=>{
     console.log(`server is running on port: ${PORT}`);
 }))
