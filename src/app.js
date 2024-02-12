@@ -22,6 +22,7 @@ app.get('/captchaReq', (req, res) => {
 });
 
 app.post('/submit', (req, res) => {
+    const userAnswer = parseInt(req.body.answer);
 
 
 });
