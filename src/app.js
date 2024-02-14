@@ -24,7 +24,8 @@ app.get('/captchaReq', (req, res) => {
 app.post('/submit', (req, res) => {
     const userAnswer = parseInt(req.body.answer);
     const correctAnswer = parseInt(req.body.result);
-
+    if (userAnswer === correctAnswer) {
+    }
 });
 
 app.listen((PORT,()=>{
