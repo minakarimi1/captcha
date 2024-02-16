@@ -26,6 +26,8 @@ app.post('/submit', (req, res) => {
     const correctAnswer = parseInt(req.body.result);
     if (userAnswer === correctAnswer) {
         res.status(200).send({message:'جواب صحیح'});
+    } else {
+    res.status(404).send({message:'جواب اشتباه'});
     }
 });
 
