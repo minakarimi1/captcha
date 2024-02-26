@@ -1,5 +1,6 @@
 import 'dotenv/config';
-import express from 'express';
+// import express from 'express';
+import express, { urlencoded } from 'express';
 import { generateCaptcha } from './fs.js';
 
 const PORT = process.env.PORT || 3000;
@@ -24,7 +25,7 @@ app.get('/', (req, res) => {
 app.get('/captchaReq', (req, res) => {
     try {
         const { captcha, result } = generateCaptcha();
-        res.send({ captcha, result });
+        res.send({ captcha:captcha,result:result });
     } catch (error) {
         console.error('Error generating captcha:', error);
         res.status(500).send('Internal Server Error');
