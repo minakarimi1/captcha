@@ -1,6 +1,7 @@
 import 'dotenv/config';
-// import express from 'express';
-import express, { urlencoded } from 'express';
+import express from 'express';
+import { urlencoded } from 'express';
+import path from 'path'; // Import the path module
 import { generateCaptcha } from './fs.js';
 
 const PORT = process.env.PORT || 3000;
@@ -8,6 +9,7 @@ const app = express();
 
 // Middleware
 app.set('view engine', 'ejs');
+app.set('views', path.join('./src', 'views'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
