@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>captcha question</title>
+  </head>
+
+  <body>
+  <h1>What is <%= captcha %></h1>
+  <form>
+    <input type="hidden" name="result" value="<%= result %>">
+    <input type="number" name="answer" required>
+    <input type="number" name="answer" required>
+    <button type="submit">Submit</button>
+  </form>
+  <p>captcha</p>
+  <p>code</p>
+
+  </body>
+</html>
