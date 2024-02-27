@@ -38,8 +38,8 @@ app.post('/submit', (req, res) => {
     try {
         const userAnswer = parseInt(req.body.answer);
         const correctAnswer = parseInt(req.body.result);
+        console.log("answer::"+ userAnswer, correctAnswer)
         if (userAnswer === correctAnswer) {
-            console.log(": جواب کاربر"+ userAnswer, correctAnswer)
 
             res.status(200).send({ message: 'جواب صحیح' });
         } else {
