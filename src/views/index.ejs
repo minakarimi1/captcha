@@ -9,7 +9,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: aliceblue;
+        /*color: aliceblue;*/
       }
       form {
         width: 300px; /* Adjust width as needed */
@@ -17,9 +17,9 @@
     </style>
   </head>
 
-  <body bgcolor="black">
+  <body style="background-color: white ;color: black" >
     <div class="container" >
-      <form>
+      <form  action="/submit" method="post">
         <h1>What is <%= captcha %></h1>
         <input type="hidden" name="result" value="<%= result %>">
         <label for="answer1">Answer:</label><br>
