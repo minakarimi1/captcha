@@ -4,6 +4,5 @@ export const generateCaptcha =()=>{
     const operation = ['+', '-', '*'][Math.floor(Math.random() * 3)];
     const result = eval(`${num1} ${operation} ${num2}`);
     const captcha = `${num1} ${operation} ${num2} = ?`;
-    // console.log(captcha, result)
     return { captcha, result };
 }
